@@ -1,0 +1,10 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rprofile
+.httr-oauth
+*_cache/
+/cache/
+.DS_Store
+.hugo_build.lock

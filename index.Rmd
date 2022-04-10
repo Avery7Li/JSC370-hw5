@@ -130,6 +130,9 @@ players %>%
 
 The boxplots within the two tabs show player ages and their prior selections across the 16 teams, respectively. On the x-axis, the teams are ordered from left to right in terms of their final rank in the preliminary round. 
 
+
+It is observable from the age boxplot that Team Belgium was the youngest team and they had the smallest variation in player ages. On the other hand, Team Thailand and Team Korea had the largest variation. In terms of prior selections, Team Brazil was the least experience - the upper quantile indicates that 75% of their members had only been selected for 5 times in other competitions. However, Team Brazil performed no worse than most of other experience teams. Therefore, players' experiences are not critical for a team's overall performance.
+
 ### Ages
 
 ```{r}
@@ -155,8 +158,7 @@ transform(players,
          hovermode="compare")
   
 ```
-
-It is observable from the age boxplot that Team Belgium was the youngest team and they had the smallest variation in player ages. On the other hand, Team Thailand and Team Korea had the largest variation. In terms of prior selections, Team Brazil was the least experience - the upper quantile indicates that 75% of their members had only been selected for 5 times in other competitions. However, Team Brazil performed no worse than most of other experience teams. Therefore, players' experiences are not critical for a team's overall performance.
+<br>
 
 ## Match Overview
 
