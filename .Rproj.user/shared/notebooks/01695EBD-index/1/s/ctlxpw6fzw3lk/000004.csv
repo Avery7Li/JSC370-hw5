@@ -1,0 +1,35 @@
+"0","transform(players,"
+"0","          team_full=factor(team_full, levels=team_in_order))%>%"
+"0","  plot_ly(y=~total_selections, color=~team_full, type=""box"") %>%"
+"0","  layout(title= ""Player Number of Selections"","
+"0","         yaxis = list(title=""Age""),"
+"0","         xaxis = list(title=""Team""),"
+"0","         hovermode=""compare"")"
+"2","Warning in RColorBrewer::brewer.pal(N, ""Set2"") :"
+"2","
+ "
+"2"," n too large, allowed maximum for palette Set2 is 8
+Returning the palette you asked for with that many colors
+
+"
+"2","Warning in RColorBrewer::brewer.pal(N, ""Set2"") :"
+"2","
+ "
+"2"," n too large, allowed maximum for palette Set2 is 8
+Returning the palette you asked for with that many colors
+
+"
+"2","Warning in RColorBrewer::brewer.pal(N, ""Set2"") :"
+"2","
+ "
+"2"," n too large, allowed maximum for palette Set2 is 8
+Returning the palette you asked for with that many colors
+
+"
+"2","Warning in RColorBrewer::brewer.pal(N, ""Set2"") :"
+"2","
+ "
+"2"," n too large, allowed maximum for palette Set2 is 8
+Returning the palette you asked for with that many colors
+
+"

@@ -1,0 +1,30 @@
+---
+title: "Top Players"
+output: html_document
+---
+
+This is an example second page for demonstration.
+
+## Top 10 Players for 4 Skills
+
+The scatterplot below decomposes the top 10 rankings for the 4 skills, where the color of the marker indicates the tactical skill while the shape indicates the player position. The 16 teams on the y-axis are ordered by the preliminary round team rank from top to bottom. The x-axis corresponds to the rank from 1 to 10, so each vertical line would have four pins for the four skills. The player name is shown on the popup text when hovering over the marker.
+
+```{r, echo=FALSE}
+source("process_vnl_data.R")
+```
+
+```{r, echo=FALSE, warning=FALSE}
+
+scatter_top_player <- transform(player_rank,
+          team_full=factor(team_full, levels=rev(team_in_order)))[rank <= 10] %>%
+  ggplot(aes(x=rank, y=team_full, shape=position, color=skill)) + 
+  geom_point(aes(text=sprintf("name: %s", name))) +
+  scale_x_continuous(breaks=seq(1,10))+
+  theme_light() +
+  guides(size="none") +
+  #theme(axis.ticks.y=paste(rank_all$team_rank, rank_all$team_full))
+  scale_color_brewer(palette = "Set2") +
+  labs(title="Composition of Top 10 Players with 4 Tactical Skills By Teams", 
+       x="Player Skill Rank", y="Team")
+ggplotly(scatter_top_player)
+```
